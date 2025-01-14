@@ -1,0 +1,1894 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined"
+    ],
+    "baseIris": [
+      "http://www.w3.org/ns/ssn",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://www.example.com/busbar-ontology",
+      "http://www.w3.org/ns/sosa"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.example.com/busbar-ontology#",
+      "ssn": "http://www.w3.org/ns/ssn/",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.example.com/busbar-ontology"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.24",
+      "translation": [
+        364.58,
+        179.75
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "20",
+      "type": "owl:Class"
+    },
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "39",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "41",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "53",
+      "type": "owl:Class"
+    },
+    {
+      "id": "56",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "48",
+      "type": "owl:Class"
+    },
+    {
+      "id": "59",
+      "type": "owl:Class"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "62",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "2",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "64",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "65",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "49",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "66",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "14",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "72",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "24",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "71",
+      "type": "owl:Class"
+    },
+    {
+      "id": "74",
+      "type": "owl:Class"
+    },
+    {
+      "id": "69",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "owl:Class"
+    },
+    {
+      "id": "46",
+      "type": "owl:Class"
+    },
+    {
+      "id": "27",
+      "type": "owl:Class"
+    },
+    {
+      "id": "73",
+      "type": "owl:Class"
+    },
+    {
+      "id": "70",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "6",
+      "iri": "http://www.example.com/busbar-ontology#VisualInspectionRobot",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "VisualInspectionRobot"
+      },
+      "pos": [
+        -314.14,
+        334.13
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "http://www.w3.org/ns/sosa/Actuator",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "Actuator"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1047.57,
+        -66.77
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "http://www.example.com/busbar-ontology#RamPositionSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "RamPositionSensor"
+      },
+      "pos": [
+        1220.82,
+        427.07
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.example.com/busbar-ontology#CopperPlate",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "CopperPlate"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#CopperPlate_1",
+          "labels": {
+            "IRI-based": "CopperPlate_1",
+            "undefined": "Copper Plate 1"
+          }
+        }
+      ],
+      "pos": [
+        -32.02,
+        1641.44
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://www.example.com/busbar-ontology#BendingStation",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BendingStation"
+      },
+      "pos": [
+        -147.43,
+        -352.02
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "http://www.example.com/busbar-ontology#BusbarManufacturingPlant",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BusbarManufacturingPlant"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyPlant",
+          "labels": {
+            "IRI-based": "MyPlant",
+            "undefined": "Busbar Manufacturing Plant"
+          }
+        }
+      ],
+      "pos": [
+        182.85,
+        -870.68
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.example.com/busbar-ontology#BusbarWrappingMachine",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BusbarWrappingMachine"
+      },
+      "pos": [
+        -224.94,
+        -1.95
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.example.com/busbar-ontology#PackagingArea",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PackagingArea"
+      },
+      "pos": [
+        357.41,
+        -846.55
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "http://www.example.com/busbar-ontology#PunchingMachine",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PunchingMachine"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyPunchingMachine",
+          "labels": {
+            "IRI-based": "MyPunchingMachine",
+            "undefined": "Punching Machine"
+          }
+        }
+      ],
+      "pos": [
+        412.84,
+        -108.94
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "http://www.w3.org/ns/sosa/Observation",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "Observation"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#ShearBladePositionObservation_1",
+          "labels": {
+            "IRI-based": "ShearBladePositionObservation_1"
+          }
+        },
+        {
+          "iri": "http://www.example.com/busbar-ontology#PunchPositionObservation_1",
+          "labels": {
+            "IRI-based": "PunchPositionObservation_1"
+          }
+        }
+      ],
+      "pos": [
+        558.7,
+        1048.5
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://www.example.com/busbar-ontology#BackgaugePositionSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BackgaugePositionSensor"
+      },
+      "pos": [
+        1310.83,
+        817.26
+      ]
+    },
+    {
+      "id": "39",
+      "iri": "http://www.example.com/busbar-ontology#PunchForceSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PunchForceSensor"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#PunchForceSensor_1",
+          "labels": {
+            "IRI-based": "PunchForceSensor_1",
+            "undefined": "Punch Force Sensor 1"
+          }
+        }
+      ],
+      "pos": [
+        892.93,
+        1101.77
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://www.example.com/busbar-ontology#QualityControlArea",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "QualityControlArea"
+      },
+      "pos": [
+        -174.73,
+        -475.37
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://www.w3.org/ns/sosa/Actuation",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "Actuation"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1422.97,
+        0.45
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://www.example.com/busbar-ontology#CuttingStation",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "CuttingStation"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyCuttingStation",
+          "labels": {
+            "IRI-based": "MyCuttingStation",
+            "undefined": "Cutting Station"
+          }
+        }
+      ],
+      "pos": [
+        20.34,
+        -814.71
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "http://www.w3.org/ns/ssn/Device",
+      "baseIri": "http://www.w3.org/ns/ssn",
+      "label": {
+        "IRI-based": "Device"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        105.99,
+        235.19
+      ]
+    },
+    {
+      "id": "53",
+      "iri": "http://www.example.com/busbar-ontology#ShearBladePositionSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "ShearBladePositionSensor"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyShearBladeSensor",
+          "labels": {
+            "IRI-based": "MyShearBladeSensor",
+            "undefined": "Shear Blade Position Sensor"
+          }
+        }
+      ],
+      "pos": [
+        1152.98,
+        1037.51
+      ]
+    },
+    {
+      "id": "56",
+      "iri": "http://www.example.com/busbar-ontology#CuttingLengthSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "CuttingLengthSensor"
+      },
+      "pos": [
+        1025.47,
+        1078.85
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "http://www.example.com/busbar-ontology#PlateClampActuator",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PlateClampActuator"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#PlateClampActuator_1",
+          "labels": {
+            "IRI-based": "PlateClampActuator_1",
+            "undefined": "Plate Clamp Actuator"
+          }
+        },
+        {
+          "iri": "http://www.example.com/busbar-ontology#PlateClampActuator_2",
+          "labels": {
+            "IRI-based": "PlateClampActuator_2",
+            "undefined": "Plate Clamp Actuator 2"
+          }
+        }
+      ],
+      "pos": [
+        1407.75,
+        -197.85
+      ]
+    },
+    {
+      "id": "48",
+      "iri": "http://www.example.com/busbar-ontology#ConductivityTester",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "ConductivityTester"
+      },
+      "pos": [
+        -245.74,
+        467.92
+      ]
+    },
+    {
+      "id": "59",
+      "iri": "http://www.example.com/busbar-ontology#DiePositionSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "DiePositionSensor"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#DiePositionSensor_1",
+          "labels": {
+            "IRI-based": "DiePositionSensor_1",
+            "undefined": "Die Position Sensor 1"
+          }
+        }
+      ],
+      "pos": [
+        1255.09,
+        942.97
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "http://www.example.com/busbar-ontology#BendingMachine",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BendingMachine"
+      },
+      "pos": [
+        495.25,
+        0.72
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        750.6,
+        -162.16
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -92.05,
+        931.62
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        228.7,
+        487.5
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        1615.88,
+        -626.45
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "http://www.example.com/busbar-ontology#CopperPlateStorageArea",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "CopperPlateStorageArea"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyCopperPlateStorageArea",
+          "labels": {
+            "IRI-based": "MyCopperPlateStorageArea",
+            "undefined": "Copper Plate Storage Area"
+          }
+        }
+      ],
+      "pos": [
+        -165.35,
+        -600.65
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1549.69,
+        -834.76
+      ]
+    },
+    {
+      "id": "49",
+      "iri": "http://www.example.com/busbar-ontology#BoxSealingMachine",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BoxSealingMachine"
+      },
+      "pos": [
+        -318.61,
+        154.48
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://www.w3.org/ns/ssn/System",
+      "baseIri": "http://www.w3.org/ns/ssn",
+      "label": {
+        "IRI-based": "System"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        574.29,
+        19.26
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1712.67,
+        -427.92
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://www.example.com/busbar-ontology#PlateStacker",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PlateStacker"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#PlateStacker_1",
+          "labels": {
+            "IRI-based": "PlateStacker_1",
+            "undefined": "Plate Stacker 1"
+          }
+        }
+      ],
+      "pos": [
+        -142.11,
+        571.04
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.w3.org/ns/sosa/Platform",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "Platform"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        245.26,
+        -457.69
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://www.w3.org/ns/sosa/Sensor",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "Sensor"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        917.79,
+        676.63
+      ]
+    },
+    {
+      "id": "72",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        625.65,
+        -345.74
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -185.34,
+        211.02
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://www.w3.org/ns/sosa/FeatureOfInterest",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "FeatureOfInterest"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#ShearBlade",
+          "labels": {
+            "IRI-based": "ShearBlade",
+            "undefined": "Shear Blade"
+          }
+        },
+        {
+          "iri": "http://www.example.com/busbar-ontology#PunchTool",
+          "labels": {
+            "IRI-based": "PunchTool",
+            "undefined": "Punch Tool"
+          }
+        }
+      ],
+      "pos": [
+        191.36,
+        1335.85
+      ]
+    },
+    {
+      "id": "71",
+      "iri": "http://www.example.com/busbar-ontology#PunchPositionSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PunchPositionSensor"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#PunchPositionSensor_1",
+          "labels": {
+            "IRI-based": "PunchPositionSensor_1",
+            "undefined": "Punch Position Sensor 1"
+          }
+        }
+      ],
+      "pos": [
+        1346.3,
+        688.98
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "http://www.w3.org/ns/sosa/Sample",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "Sample"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -192.61,
+        1265.43
+      ]
+    },
+    {
+      "id": "69",
+      "iri": "http://www.example.com/busbar-ontology#DimensionalMeasurementSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "DimensionalMeasurementSensor"
+      },
+      "pos": [
+        1309.07,
+        554.36
+      ]
+    },
+    {
+      "id": "47",
+      "iri": "http://www.example.com/busbar-ontology#ShearingMachine",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "ShearingMachine"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyShearingMachine",
+          "labels": {
+            "IRI-based": "MyShearingMachine",
+            "undefined": "Shearing Machine"
+          }
+        }
+      ],
+      "pos": [
+        21.18,
+        686.99
+      ]
+    },
+    {
+      "id": "46",
+      "iri": "http://www.example.com/busbar-ontology#PlateLifter",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PlateLifter"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#PlateLifter_1",
+          "labels": {
+            "IRI-based": "PlateLifter_1",
+            "undefined": "Plate Lifter 1"
+          }
+        }
+      ],
+      "pos": [
+        452.93,
+        416.08
+      ]
+    },
+    {
+      "id": "27",
+      "iri": "http://www.example.com/busbar-ontology#BusbarProductionLine",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BusbarProductionLine"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyProductionLine",
+          "labels": {
+            "IRI-based": "MyProductionLine",
+            "undefined": "Busbar Production Line"
+          }
+        }
+      ],
+      "pos": [
+        -95.17,
+        -716.82
+      ]
+    },
+    {
+      "id": "73",
+      "iri": "http://www.example.com/busbar-ontology#Busbar",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "Busbar"
+      },
+      "pos": [
+        -182.39,
+        1437.55
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.example.com/busbar-ontology#BendAngleSensor",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "BendAngleSensor"
+      },
+      "pos": [
+        755.95,
+        1041.54
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://www.example.com/busbar-ontology#PunchingStation",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "PunchingStation"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.example.com/busbar-ontology#MyPunchingStation",
+          "labels": {
+            "IRI-based": "MyPunchingStation",
+            "undefined": "Punching Station"
+          }
+        }
+      ],
+      "pos": [
+        515.54,
+        -766.41
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "3",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "18",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "22",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "25",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "26",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "28",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "30",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "32",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "33",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "34",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "35",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "37",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "38",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "40",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "42",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "43",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "51",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "52",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "54",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "55",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "57",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "58",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "60",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "61",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "67",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "68",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "75",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "76",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "79",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "80",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "81",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "82",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "84",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "85",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "86",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "87",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "88",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "89",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "90",
+      "type": "rdfs:subClassOf"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "0",
+      "iri": "http://www.example.com/busbar-ontology#hasSerialNumber",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "hasSerialNumber"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "1",
+      "range": "2",
+      "pos": [
+        175.85,
+        378.83
+      ]
+    },
+    {
+      "id": "3",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "4",
+      "range": "5",
+      "pos": [
+        1114.31,
+        746.94
+      ]
+    },
+    {
+      "id": "18",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "19",
+      "range": "14",
+      "pos": [
+        35.26,
+        -466.53
+      ]
+    },
+    {
+      "id": "22",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "15",
+      "range": "14",
+      "pos": [
+        214.84,
+        -658.97
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.example.com/busbar-ontology#hasModelNumber",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "hasModelNumber"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "1",
+      "range": "24",
+      "pos": [
+        -52.34,
+        222.06
+      ]
+    },
+    {
+      "id": "25",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "13",
+      "range": "14",
+      "pos": [
+        48.91,
+        -404.86
+      ]
+    },
+    {
+      "id": "26",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "14",
+      "pos": [
+        79.24,
+        -584.06
+      ]
+    },
+    {
+      "id": "28",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "29",
+      "range": "14",
+      "pos": [
+        376.92,
+        -608.08
+      ]
+    },
+    {
+      "id": "30",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "31",
+      "range": "14",
+      "pos": [
+        44.94,
+        -527.43
+      ]
+    },
+    {
+      "id": "32",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "7",
+      "range": "8",
+      "pos": [
+        810.93,
+        -23.75
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.w3.org/ns/sosa/hosts",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "hosts"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "14",
+      "range": "8",
+      "pos": [
+        423.71,
+        -250.1
+      ]
+    },
+    {
+      "id": "34",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "1",
+      "range": "8",
+      "pos": [
+        340.14,
+        127.23
+      ]
+    },
+    {
+      "id": "35",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "36",
+      "range": "14",
+      "pos": [
+        135.61,
+        -631.74
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "hasFeatureOfInterest"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "21",
+      "range": "12",
+      "pos": [
+        375.03,
+        1192.17
+      ]
+    },
+    {
+      "id": "38",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "17",
+      "range": "14",
+      "pos": [
+        301.34,
+        -652.12
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://www.w3.org/ns/sosa/madeByActuator",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "madeByActuator"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "41",
+      "range": "7",
+      "pos": [
+        1235.27,
+        -33.16
+      ]
+    },
+    {
+      "id": "42",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "14",
+      "range": "8",
+      "pos": [
+        387.77,
+        -225.9
+      ]
+    },
+    {
+      "id": "43",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "16",
+      "range": "1",
+      "pos": [
+        -59.47,
+        116.62
+      ]
+    },
+    {
+      "id": "50",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "5",
+      "range": "8",
+      "pos": [
+        746.04,
+        347.95
+      ]
+    },
+    {
+      "id": "51",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "47",
+      "range": "1",
+      "pos": [
+        64.56,
+        455.91
+      ]
+    },
+    {
+      "id": "52",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "46",
+      "range": "1",
+      "pos": [
+        274.79,
+        323.2
+      ]
+    },
+    {
+      "id": "54",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "49",
+      "range": "1",
+      "pos": [
+        -106.31,
+        194.83
+      ]
+    },
+    {
+      "id": "55",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "48",
+      "range": "1",
+      "pos": [
+        -69.87,
+        351.55
+      ]
+    },
+    {
+      "id": "57",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "45",
+      "range": "1",
+      "pos": [
+        300.62,
+        117.95
+      ]
+    },
+    {
+      "id": "58",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "6",
+      "range": "1",
+      "pos": [
+        -104.07,
+        284.66
+      ]
+    },
+    {
+      "id": "60",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "20",
+      "range": "1",
+      "pos": [
+        255.91,
+        67.06
+      ]
+    },
+    {
+      "id": "61",
+      "iri": "http://www.example.com/busbar-ontology#hasCuttingCapacity",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "hasCuttingCapacity"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "47",
+      "range": "62",
+      "pos": [
+        -45.84,
+        831.78
+      ]
+    },
+    {
+      "id": "67",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "9",
+      "range": "7",
+      "pos": [
+        1221.18,
+        -129.95
+      ]
+    },
+    {
+      "id": "68",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "44",
+      "range": "1",
+      "pos": [
+        -14.92,
+        398.87
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "http://www.w3.org/ns/sosa/resultTime",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "resultTime"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "64",
+      "range": "66",
+      "pos": [
+        1668.41,
+        -518.71
+      ]
+    },
+    {
+      "id": "76",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "74",
+      "range": "12",
+      "pos": [
+        -7.41,
+        1299.4
+      ]
+    },
+    {
+      "id": "77",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "73",
+      "range": "12",
+      "pos": [
+        -2.17,
+        1388.51
+      ]
+    },
+    {
+      "id": "78",
+      "iri": "http://www.example.com/busbar-ontology#hasPunchingForce",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "hasPunchingForce"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "20",
+      "range": "72",
+      "pos": [
+        534.99,
+        -244.86
+      ]
+    },
+    {
+      "id": "79",
+      "iri": "http://www.w3.org/ns/sosa/madeBySensor",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "madeBySensor"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "21",
+      "range": "5",
+      "pos": [
+        743.04,
+        857.6
+      ]
+    },
+    {
+      "id": "80",
+      "iri": "http://www.example.com/busbar-ontology#hasBendingAngleRange",
+      "baseIri": "http://www.example.com/busbar-ontology",
+      "label": {
+        "IRI-based": "hasBendingAngleRange"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "45",
+      "range": "63",
+      "pos": [
+        636.16,
+        -89.17
+      ]
+    },
+    {
+      "id": "81",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "11",
+      "range": "12",
+      "pos": [
+        78.71,
+        1489.96
+      ]
+    },
+    {
+      "id": "82",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "56",
+      "range": "5",
+      "pos": [
+        971.63,
+        877.74
+      ]
+    },
+    {
+      "id": "83",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "70",
+      "range": "5",
+      "pos": [
+        836.87,
+        859.08
+      ]
+    },
+    {
+      "id": "84",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "59",
+      "range": "5",
+      "pos": [
+        1082.3,
+        806.53
+      ]
+    },
+    {
+      "id": "85",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "71",
+      "range": "5",
+      "pos": [
+        1126.77,
+        682.65
+      ]
+    },
+    {
+      "id": "86",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "10",
+      "range": "5",
+      "pos": [
+        1069.31,
+        551.85
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "http://www.w3.org/ns/sosa/hasSimpleResult",
+      "baseIri": "http://www.w3.org/ns/sosa",
+      "label": {
+        "IRI-based": "hasSimpleResult"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "64",
+      "range": "65",
+      "pos": [
+        1579.83,
+        -739.9
+      ]
+    },
+    {
+      "id": "88",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "69",
+      "range": "5",
+      "pos": [
+        1113.43,
+        615.49
+      ]
+    },
+    {
+      "id": "89",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "53",
+      "range": "5",
+      "pos": [
+        1032.51,
+        852.65
+      ]
+    },
+    {
+      "id": "90",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "39",
+      "range": "5",
+      "pos": [
+        905.67,
+        883.94
+      ]
+    }
+  ]
+}
