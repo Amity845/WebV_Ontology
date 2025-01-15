@@ -1,0 +1,360 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
+    xmlns="http://www.example.com/busbar-ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ssn="http://www.w3.org/ns/ssn/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" >
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hasSimpleResult">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PackagingArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeByActuator">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Actuation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyQualityControlArea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#CopperPlate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BendingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateClampActuator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sample">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#CopperPlate_1">
+        <rdfs:label>Copper Plate 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#CopperPlate"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateClampActuator_2">
+        <rdfs:label>Plate Clamp Actuator 2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PlateClampActuator"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#hasSerialNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyShearingMachine">
+        <hasSerialNumber>SN12345</hasSerialNumber>
+        <hasModelNumber>Model ABC</hasModelNumber>
+        <hasCuttingCapacity>10 mm</hasCuttingCapacity>
+        <sosa:hasFeatureOfInterest rdf:resource="http://www.example.com/busbar-ontology#CopperPlate_1"/>
+        <rdfs:label>Shearing Machine</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#ShearingMachine"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateClampActuator_1">
+        <rdfs:label>Plate Clamp Actuator</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PlateClampActuator"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateStacker">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeObservation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchTool">
+        <rdfs:label>Punch Tool</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#ShearBlade">
+        <rdfs:label>Shear Blade</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyPlant">
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyProductionLine"/>
+        <rdfs:label>Busbar Manufacturing Plant</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#BusbarManufacturingPlant"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Actuation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#QualityControlArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#CuttingStation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyShearBladeSensor">
+        <rdfs:label>Shear Blade Position Sensor</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#ShearBladePositionSensor"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Device">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#CuttingLengthSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#hasBendingAngleRange">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.example.com/busbar-ontology#BendingMachine"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#hasCuttingCapacity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.example.com/busbar-ontology#ShearingMachine"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchPositionObservation_1">
+        <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-27T10:15:00Z</sosa:resultTime>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.2</sosa:hasSimpleResult>
+        <sosa:hasFeatureOfInterest rdf:resource="http://www.example.com/busbar-ontology#PunchTool"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BendingStation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#hasPunchingForce">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.example.com/busbar-ontology#PunchingMachine"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchingStation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyPunchingStation">
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#RamPositionSensor_1"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#PunchPositionSensor_1"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#PunchForceSensor_1"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#PlateClampActuator_2"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyPunchingMachine"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#DiePositionSensor_1"/>
+        <rdfs:label>Punching Station</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PunchingStation"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#ShearingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#ShearBladePositionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyCopperPlateStorageArea">
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#PlateStacker_1"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#PlateLifter_1"/>
+        <rdfs:label>Copper Plate Storage Area</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#CopperPlateStorageArea"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Actuator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BusbarProductionLine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#VisualInspectionRobot">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/System">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateStacker_1">
+        <rdfs:label>Plate Stacker 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PlateStacker"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#DiePositionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyPunchingMachine">
+        <hasSerialNumber>SN67890</hasSerialNumber>
+        <hasPunchingForce>100 tons</hasPunchingForce>
+        <hasModelNumber>Model XYZ</hasModelNumber>
+        <sosa:hasFeatureOfInterest rdf:resource="http://www.example.com/busbar-ontology#CopperPlate_1"/>
+        <rdfs:label>Punching Machine</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PunchingMachine"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/resultTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#RamPositionSensor_1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyPackagingArea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#Busbar">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchForceSensor_1">
+        <rdfs:label>Punch Force Sensor 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PunchForceSensor"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hosts">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#CopperPlateStorageArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchPositionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#ConductivityTester">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchPositionSensor_1">
+        <sosa:madeObservation rdf:resource="http://www.example.com/busbar-ontology#PunchPositionObservation_1"/>
+        <rdfs:label>Punch Position Sensor 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PunchPositionSensor"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#DimensionalMeasurementSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyProductionLine">
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyQualityControlArea"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyPunchingStation"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyPackagingArea"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyCuttingStation"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyCopperPlateStorageArea"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyBendingStation"/>
+        <rdfs:label>Busbar Production Line</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#BusbarProductionLine"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BackgaugePositionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BendAngleSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchForceSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PunchingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#RamPositionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyCuttingStation">
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyShearingMachine"/>
+        <sosa:hosts rdf:resource="http://www.example.com/busbar-ontology#MyShearBladeSensor"/>
+        <rdfs:label>Cutting Station</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#CuttingStation"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#hasModelNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#MyBendingStation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BoxSealingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BusbarManufacturingPlant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateLifter_1">
+        <rdfs:label>Plate Lifter 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#PlateLifter"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#ShearBladePositionObservation_1">
+        <sosa:resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-27T10:00:00Z</sosa:resultTime>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</sosa:hasSimpleResult>
+        <sosa:madeBySensor rdf:resource="http://www.example.com/busbar-ontology#MyShearBladeSensor"/>
+        <sosa:hasFeatureOfInterest rdf:resource="http://www.example.com/busbar-ontology#ShearBlade"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#DiePositionSensor_1">
+        <rdfs:label>Die Position Sensor 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.example.com/busbar-ontology#DiePositionSensor"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#PlateLifter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.com/busbar-ontology#BusbarWrappingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+</rdf:RDF>
