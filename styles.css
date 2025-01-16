@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#visualization {
+  margin-top: 20px;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.label {
+  font-family: Arial;
+  font-size: 12px;
+  pointer-events: none;
+}

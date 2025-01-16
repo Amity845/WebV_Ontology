@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ontology Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/rdflib@2.2.0/dist/rdflib.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>Ontology Visualizer</h1>
+  <input type="text" id="rdf-url" placeholder="Enter RDF URL" value="https://raw.githubusercontent.com/Venky9806/Webowl/refs/heads/main/asnxt_cncplant.rdf">
+  <button onclick="loadRDF()">Load RDF</button>
+  <div id="visualization"></div>
+  <script src="app.js"></script>
+</body>
+</html>
