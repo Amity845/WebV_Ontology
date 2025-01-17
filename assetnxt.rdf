@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:fo="http://example.com/factory_ontology#">
+
+  <rdf:Description rdf:about="http://example.com/factory/production#factory1">
+    <fo:factoryName>Example Factory</fo:factoryName>
+    <fo:location>Mumbai, India</fo:location>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.com/factory/production#product1">
+    <fo:productID>001</fo:productID>
+    <fo:productName>Widget A</fo:productName>
+    <fo:productionDate>2025-01-01</fo:productionDate>
+    <fo:quantityProduced>1000</fo:quantityProduced>
+    <fo:productionLine rdf:resource="http://example.com/factory/production#factory1" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.com/factory/production#product2">
+    <fo:productID>002</fo:productID>
+    <fo:productName>Widget B</fo:productName>
+    <fo:productionDate>2025-01-01</fo:productionDate
