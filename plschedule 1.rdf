@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sched: <http://example.org/scheduling#> .
+@prefix person: <http://example.org/personnel#> .
+@base <http://example.org/scheduling> .
+
+<http://example.org/scheduling>
+    a owl:Ontology ;
+    rdfs:label "Manufacturing Scheduling Ontology" ;
+    owl:imports <http://example.org/personnel> .
+
+sched:Schedule a owl:Class .
+sched:Activity a owl:Class .
+sched:Resource a owl:Class .
+sched:Product a owl:Class .
+sched:Machine a owl:Class ;
+    rdfs:subClassOf sched:Resource .
+sched:Material a owl:Class ;
+    rdfs:subClassOf sched:Resource .
+
+sched:contains a owl:ObjectProperty ;
+    rdfs:domain sched:Schedule ;
+    rdfs:range sched:Activity .
+
+sched:requires a owl:ObjectProperty ;
+    rdfs:domain sched:Activity ;
+    rdfs:range sched:Resource .
+
+sched:produces a owl:ObjectProperty ;
+    rdfs:domain sched:Activity ;
+    rdfs:range sched:Product .
+
+sched:precedes a owl:ObjectProperty ;
+    rdfs:domain sched:Activity ;
+    rdfs:range sched:Activity .
+
+sched:assignedTo a owl:ObjectProperty ;
+    rdfs:domain sched:Activity ;
+    rdfs:range person:Person .
+
+sched:name a owl:DatatypeProperty ;
+    rdfs:domain sched:Activity ;
+    rdfs:range xsd:string .
+
+sched:duration a owl:DatatypeProperty ;
+    rdfs:domain sched:Activity ;
+    rdfs:range xsd:integer .
+
+sched:dueDate a owl:DatatypeProperty ;
+    rdfs:domain sched:Product ;
+    rdfs:range xsd:date .
+
+sched:WeeklySchedule a sched:Schedule ;
+    sched:contains sched:CuttingActivity .
+
+sched:CuttingActivity a sched:Activity ;
+    sched:name "Cutting Operation" ;
+    sched:duration 60 ;
+    sched:requires sched:CuttingMachine1, sched:MetalSheet1 ;
+    sched:produces sched:CutMetalBlank ;
+    sched:assignedTo person:JohnDoe .
+
+sched:CuttingMachine1 a sched:Machine .
+sched:MetalSheet1 a sched:Material .
+
+sched:CutMetalBlank a sched:Product ;
+    sched:dueDate "2024-11-15"^^xsd:date .
+
+
+@prefix person: <http://example.org/personnel#> .
+@base <http://example.org/personnel> .
+
+<http://example.org/personnel>
+    a owl:Ontology ;
+    rdfs:label "Personnel Ontology" .
+
+person:Person a owl:Class .
+person:ProductionManager a owl:Class ;
+    rdfs:subClassOf person:Person .
+person:Operator a owl:Class ;
+    rdfs:subClassOf person:Person .
+person:QualityInspector a owl:Class ;
+    rdfs:subClassOf person:Person .
+person:MaintenanceTechnician a owl:Class ;
+    rdfs:subClassOf person:Person .
+person:MaterialHandler a owl:Class ;
+    rdfs:subClassOf person:Person .
+
+person:name a owl:DatatypeProperty ;
+    rdfs:domain person:Person ;
+    rdfs:range xsd:string .
+
+person:JohnDoe a person:Operator ;
+    person:name "John Doe" .
+
+person:JaneSmith a person:ProductionManager ;
+    person:name "Jane Smith" .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .  # Important: Define xsd prefix
